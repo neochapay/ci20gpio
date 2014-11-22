@@ -53,12 +53,14 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-    extern void initPin(uint8_t pin);
-    extern void setMode(uint8_t pin, unit8_t mode);
-    extern void setValue(uint8_t pin, unit8_t value);
+    extern void ci20_initPin(uint8_t pin);
+    extern void ci20_setMode(uint8_t pin, uint8_t mode);
+    extern void ci20_setValue(uint8_t pin, uint8_t value);
 
-    extern unit8_t getMode(uint8_t pin);
-    extern unit8_t getValue(uint8_t pin);
+    extern void ci20_setDebug(uint8_t d);
+
+    extern unit8_t ci20_getMode(uint8_t pin);
+    extern unit8_t ci20_getValue(uint8_t pin);
 #ifdef __cplusplus
 }
 #endif
