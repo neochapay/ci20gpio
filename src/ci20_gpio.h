@@ -53,15 +53,14 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-    extern void initPin(unit8_t pin);
-    extern void setMode(unit8_t pin, unit8_t mode);
-    extern void setValue(unit8_t pin, unit8_t value);
+    extern void initPin(uint8_t pin);
+    extern void setMode(uint8_t pin, unit8_t mode);
+    extern void setValue(uint8_t pin, unit8_t value);
 
-    extern unit8_t getMode(unit8_t pin);
-    extern unit8_t getValue(unit8_t pin);
+    extern unit8_t getMode(uint8_t pin);
+    extern unit8_t getValue(uint8_t pin);
 #ifdef __cplusplus
 }
 #endif
-
 
 #endif
