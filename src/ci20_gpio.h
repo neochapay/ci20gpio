@@ -59,8 +59,8 @@ extern "C" {
 
     extern void ci20_setDebug(uint8_t d);
 
-    extern unit8_t ci20_getMode(uint8_t pin);
-    extern unit8_t ci20_getValue(uint8_t pin);
+    extern uint8_t ci20_getMode(uint8_t pin);
+    extern uint8_t ci20_getValue(uint8_t pin);
 #ifdef __cplusplus
 }
 #endif

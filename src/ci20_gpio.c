@@ -1,3 +1,7 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdint.h>
+
 #include "ci20_gpio.h"
 
 static uint8_t debug = 0;
@@ -22,7 +26,7 @@ void ci20_setValue(uint8_t pin, uint8_t value)
 
 }
 
-unit8_t ci20_getMode(uint8_t pin)
+uint8_t ci20_getMode(uint8_t pin)
 {
     return 0;
 }
