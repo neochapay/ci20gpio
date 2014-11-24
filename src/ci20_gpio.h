@@ -2,6 +2,7 @@
 #define CI20GPIO
 
 #include <stdint.h>
+#include <stdbool.h>
 
 #define HIGHT	1
 #define LOW	0
@@ -53,14 +54,14 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-    extern void ci20_initPin(uint8_t pin);
-    extern void ci20_setMode(uint8_t pin, uint8_t mode);
-    extern void ci20_setValue(uint8_t pin, uint8_t value);
+    extern void ci20_initPin(int pin);
+    extern void ci20_setMode(int pin, char mode);
+    extern void ci20_setValue(int pin, char value);
 
-    extern void ci20_setDebug(uint8_t d);
+    extern void ci20_setDebug(bool d);
 
-    extern uint8_t ci20_getMode(uint8_t pin);
-    extern uint8_t ci20_getValue(uint8_t pin);
+    extern char ci20_getMode(int pin);
+    extern char ci20_getValue(int pin);
 #ifdef __cplusplus
 }
 #endif
